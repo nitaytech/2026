@@ -1,7 +1,7 @@
 ---
 layout: distill
-title: "Language as a Window to the Human Mind: How NLP and LLMs Advance Human Sciences"
-description: "Can NLP predict heroin addiction outcomes, uncover suicide risks, or simulate and influence brain activity? Could LLMs one day earn a Nobel Prize for their role in simulating human behavior? and what part do NLP and LLM scientists play in crafting this reality? This post explores these questions and more, positioning that language technologies are not just as a technological enabler but as a scientific power-multiplier for advancing human sciences." 
+title: "Language as a Window Into the Mind: How NLP and LLMs Advance Human Sciences"
+description: "Can NLP predict heroin-addiction outcomes, uncover suicide risk, or simulate and even influence brain activity? Could LLMs one day contribute to research worthy of a Nobel Prize for advancing our understanding of human behavior? And what role do NLP and LLM scientists play in shaping this emerging reality? This post explores these questions, arguing that language technologies are not just tools that support scientific work (like literature-search agents, writing tools, coding assistants, and automatic scientific discovery), but that by treating language as a window into the human mind, models of language can actively help researchers uncover mechanisms of human behavior, cognition, and brain function." 
 date: 2026-04-27
 future: true
 htmlwidgets: true
@@ -17,7 +17,7 @@ authors:
   - name: Anonymous
 
 # must be the exact same name as your blogpost
-bibliography: 2026-04-27-nlp-for-human-centric-sciences.bib
+bibliography: 2026-04-27-nlp-for-human-sciences.bib
 
 # Add a table of contents to your post.
 #   - make sure that TOC names match the actual section names
@@ -25,7 +25,6 @@ bibliography: 2026-04-27-nlp-for-human-centric-sciences.bib
 #   - please use this format rather than manually creating a markdown table of contents.
 toc:
   - name: Introduction
-  - name: Science and NLP
   - name: Language as a Window Into the Mind
     subsections:
     - name: The Individual Level
@@ -66,34 +65,22 @@ _styles: >
 
 ## Introduction
 
-Deep learning and the breakthroughs it enables now reach far beyond computer science. In 2024, discoveries powered by deep learning earned recognition at the highest scientific levels, including Nobel Prizes in physics and chemistry awarded to John J. Hopfield, Geoffrey E. Hinton, Demis Hassabis, John Jumper, and David Baker. Yet when deep learning is applied to language through technologies such as large language models (LLMs), a different picture emerges: real-world scientific impact is rarely driven by language-focused AI. The breakthroughs celebrated so far belong largely to the “exact sciences”, rather than to human-centered fields such as psychology, psychiatry, behavioral economics, and cognition, fields that fundamentally rely on language as a reflection of lived experience, emotion, thought, and behavior. This raises a fundamental question: if deep learning can model physical phenomena, why does it struggle with human-centered ones? And why hasn’t language-focused AI achieved comparable scientific impact?
+Deep learning and the breakthroughs it enables now reach far beyond computer science. In 2024, discoveries powered by deep learning earned recognition at the highest scientific levels, including Nobel Prizes in physics and chemistry awarded to John J. Hopfield, Geoffrey E. Hinton, Demis Hassabis, John Jumper, and David Baker. The breakthroughs celebrated so far belong largely to the "exact sciences", rather than to **human-centered fields** such as psychology, psychiatry, neuroscience, behavioral economics, and cognition, fields that fundamentally rely on language as a reflection of lived experience, emotion, thought, and behavior. This is surprising, because deep learning has already proven highly effective at modeling language, powering many applications that have quickly become part of daily life. Yet this capability has not (yet) translated into *comparable* scientific breakthroughs in the human sciences.
 
-We hypothesize that the reason is multi-fold. The nature of human-centric sciences is inherently subjective, with objectives that are often hard to define. Modeling scientific problems that lack clear-cut definitions using a tool as flexible as language, which is full of nuances and constantly shifting across communities, generations, genders, and cognitive states, is an exceptionally complex endeavor. Additionally, for some human-centric problems, language may need to be complemented by other input types or modalities to unleash its full potential as a foundation for scientific discovery.
+While Natural Language Processing (NLP) methods, particularly Large Language Models (LLMs), are widely recognized for advancing science through workflow support (e.g., literature-search agents, writing tools, and coding assistants that facilitate large-scale analysis), or through automatic scientific discovery (e.g., [Kosmos AI Scientist](https://edisonscientific.com/articles/announcing-kosmos)), we believe that this perspective overlooks their foundational potential in science. In this post, we argue that **language itself is a window into the human mind.** Accordingly, **modeling language with NLP and LLMs can reveal mechanisms** that shape human cognition, brain function, and social behavior, thereby advancing the human sciences and opening the door to breakthroughs.
+Indeed, over the last decade, researchers across many disciplines have begun to demonstrate how NLP and LLMs can meaningfully advance the human sciences, for example, 
+Psychology <d-cite key="Fernandes2018IdentifyingSI, Leis2019DetectingSO, bhatia2023predicting, hur2024language, feuerriegel2025using"></d-cite> 
+Social Science <d-cite key="brady2017emotion, garg2018word, varnum2024large, aroyehun2025computational"></d-cite>
+Humanities <d-cite key="richards2015text, bollen2021historical, lazar2021filling, assael2022restoring, wagner2024automatic"></d-cite>
+Medicine <d-cite key="Miotto2016DeepPA, Dreisbach2019ASR, eichstaedt2018facebook, singhal2023large, thirunavukarasu2023large, lee2023assessment, gabriel2024development"></d-cite>
+Neuroscience <d-cite key="schrimpf2021neural, crema2022natural, kosinski2024evaluating, luo2025large, gao2025increasing"></d-cite>.
 
-Despite these challenges, modeling science through language remains essential, as it provides a unique window into human cognition and behavior. Indeed, NLP is already applied across numerous intersections of language and natural or human-centered sciences, from analyzing clinical records <d-cite key="Dreisbach2019ASR"></d-cite> and suggesting medical diagnoses based on patient texts <d-cite key="Miotto2016DeepPA"></d-cite> to potentially diagnosing mental disorders <d-cite key="Leis2019DetectingSO"></d-cite> or predicting suicidal tendencies <d-cite key="Fernandes2018IdentifyingSI"></d-cite>.
-
-At the same time, much of language-focused AI still leans toward an engineering mindset by refining algorithms, improving benchmarks, and optimizing predictive performance. But if we want linguistic AI to contribute meaningfully to scientific understanding, we need to shift from a focus on application and prediction to a focus on insight and discovery. Prediction, however accurate, offers limited value if it fails to shed light on the underlying human phenomena. Science aims to understand the mechanisms that govern phenomena and depend not only on what we can forecast but also on the insights that accompany those predictions.
-
-## Science and NLP
-
-Merriam-Webster defines [Science](https://www.merriam-webster.com/dictionary/science) as:
-
-<blockquote>
-  A system of knowledge covering general truths or the operation of general laws especially as obtained and tested through scientific method: the recognition and formulation of a problem, the collection of data through observation and experiment, and the formulation and testing of hypotheses
-</blockquote>
-
-Scientific disciplines are often divided into several major groups: <br> **Formal sciences** (logic, mathematics, etc), **Natural sciences** (physics, chemistry, biology, etc), **Social sciences and Humanities** (sociology, psychology, etc), and **Applied sciences** (medicine, computer science, etc).
-
-NLP emerged from the fusion of two different yet similar scientific fields: linguistics (which is a part of the Social sciences and Humanities) and computer science, which belongs to applied sciences. Originally, NLP was driven by two key motivations: <br>(1) **automating language understanding** and (2) **deciphering the structure of language**. <br> Its early foundations centered on grammar-based methods and statistical approaches such as Hidden Markov Models and probabilistic parsing. Today, with abundant data and powerful computation, the field is dominated by deep learning and large language models (LLMs) capable of handling highly complex, context-sensitive tasks.
-
-Although originally developed with the relatively straightforward goal of predicting the next word, LLMs have, as a byproduct, evolved to present human-like behaviors, simulating interactions to a degree that sometimes even confounds us <d-cite key="Dou2021IsGT"></d-cite>. Their vast accessibility, along with their ability to analyze language-based phenomena across massive amounts of data, makes LLMs a super tool for exploring scientific phenomena. They also open doors to opportunities that were previously unattainable or challenging, such as simulation, synthetic data generation, and annotation, adding invaluable capabilities to research in human-centered fields.
-
-Apart from the rise of LLMs, another factor may encourage researchers to view NLP as a power multiplier in human-centric sciences: a fresh perspective on language itself. Traditionally, we see language as a sequence of words: a straightforward conduit of information or a simple data source for analysis. In this next section, we propose a different view: language as more than data for algorithms, but rather as a window into the human mind.
+This post aims to achieve three goals. First, we examine the deep connection between language and the human sciences, arguing that language offers a unique entry point into the mechanisms of the mind, brain, and society. Second, we provide concrete examples of how NLP and LLMs can advance science: generating hypotheses, testing theories, simulating human processes, and extracting insights from corpora. Third, we define the responsibilities that NLP and LLM researchers must embrace to make their work scientifically credible and relevant, including framing problems correctly, rigorously evaluating results, and collaborating closely with experts in relevant fields.
 
 ## Language as a Window Into the Mind
 
 Language holds an unusual combination of systematic structure and deep human nuance <d-cite key="Nefdt2023-NEFLSA"></d-cite>. It is the medium through which humans express their thoughts, knowledge, emotions, intentions, and experiences, and it possesses a unique dual nature: it serves as the voice of the individual while also shaping the shared reality of larger groups, what we refer to as a bridge between personal expression and collective identity.
-By framing language as a gateway to both the individual and collective human mind, we aim to inspire researchers to think of NLP in a new light, driving true impact in human-centered sciences.
+By framing language as a gateway to both the individual and collective human mind, we aim to inspire researchers to think of NLP in a new light, driving true impact in human sciences.
 
 ### The Individual Level
 
@@ -105,7 +92,7 @@ One example of assessing treatment progression is presented in a pioneering stud
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/icud.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/icud.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -122,7 +109,7 @@ Computational social science has emerged as one of the most established subfield
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/toxicity.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/toxicity.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -131,7 +118,7 @@ Computational social science has emerged as one of the most established subfield
 
 ## Applying NLP in Scientific Quests
 
-In the previous section, we proposed a new way to frame language: as a window into the human mind, at both the individual and collective levels. Now, we turn our attention to practicality. For NLP practitioners seeking to pursue scientific inquiry, we present several practical approaches – along with examples – that showcase how NLP can:
+In the previous section, we proposed a new way to frame language: as a window into the human mind, at both the individual and collective levels. Now, we turn our attention to practicality. For NLP practitioners seeking to pursue scientific inquiry, we present several practical approaches, along with examples, that showcase how NLP can:
 
 * Generate scientific hypotheses.
 * Validate existing theories.
@@ -148,12 +135,12 @@ One example of this approach is presented in <d-cite key="Lissak2024BoredTD"></d
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/boredom-clouds.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/boredom-clouds.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/boredom-framework.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/boredom-framework.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -165,13 +152,13 @@ One example of this approach is presented in <d-cite key="Lissak2024BoredTD"></d
 
 When a scientific hypothesis already exists, NLP models can be used to validate and strengthen it. In a separate study on suicide <d-cite key="Badian2023SocialMI"></d-cite>, researchers aimed to validate and reinforce the psychological theory that loneliness is a risk factor of suicide (a top-down approach). They developed a multimodal model (incorporating both text and images) to predict suicidal tendencies based on pictures posted in users’ Facebook profiles.
 
-To do so, the authors collaborated with domain experts to translate psychiatric theories (the Interpersonal Theory <d-cite key="ribeiro2009interpersonal"></d-cite> and the Attachment Theory <d-cite key="Bowlby2012THEOO"></d-cite>) into a set of language-vision features (e.g., “the photo is a selfie,” “a photo of a family,”… see the examples in the Table below). Using the vision-language model CLIP <d-cite key="Radford2021LearningTV"></d-cite>, they queried images for features derived from these theories, extracted predictors to inform suicide risk, and used them in a Logistic Regression classifier. By analyzing the model coefficients, the authors revealed, for example, that an increased frequency of selfies compared to group photos was a key predictive factor for suicide risk, likely reflecting heightened loneliness or a reduced social circle.
+To do so, the authors collaborated with domain experts to translate psychiatric theories (the Interpersonal Theory <d-cite key="ribeiro2009interpersonal"></d-cite> and the Attachment Theory <d-cite key="Bowlby2012THEOO"></d-cite>) into a set of language-vision features (e.g., "the photo is a selfie," "a photo of a family,"… see the examples in the Table below). Using the vision-language model CLIP <d-cite key="Radford2021LearningTV"></d-cite>, they queried images for features derived from these theories, extracted predictors to inform suicide risk, and used them in a Logistic Regression classifier. By analyzing the model coefficients, the authors revealed, for example, that an increased frequency of selfies compared to group photos was a key predictive factor for suicide risk, likely reflecting heightened loneliness or a reduced social circle.
 
 This AI-driven insight computationally validates aspects of psychological theories, supporting the hypothesis that loneliness is a significant risk factor for suicide. Importantly, it demonstrates that multi-modality (i.e., the fact that features were derived based on both image and query) can help predict suicide risk more effectively than if one were to only use standard representations from state-of-the-art vision encoding models. Moreover, by analyzing the importance of features, researchers could contextualize their findings within established psychological theories.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/suicide-clip.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/suicide-clip.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -184,7 +171,7 @@ As this work demonstrates, incorporating NLP with other modalities, such as imag
 
 NLP, and especially LLMs, offers scientists a unique chance to simulate and replicate human behavior in a way that is accessible, affordable, and non-intrusive. By generating human-like responses, LLMs can enable researchers to pilot studies, test different experimental setups, examine various stimuli, and even simulate demographic groups that are difficult to recruit in real life. This, in turn, can support rapid testing of multiple hypotheses and reduce the need for resource-intensive trials with human participants.
 
-The assumption that LLMs can emulate human behavior has been validated by multiple studies, including <d-cite key="Aher2022UsingLL"></d-cite>, which introduced a series of behavioral tests they dubbed “Turing Experiment” (not to be confused with the Turing Test). These tests, drawn from psycholinguistics, behavioral economics, and social psychology, were crafted to examine whether language models could replicate human responses in various behavioral experiments. Another study by <d-cite key="Xie2024CanLL"></d-cite> explored whether language models could mirror human trust behaviors by using games from behavioral economics to observe interactions with other language models and, subsequently, with human participants. Their findings generally showed that language models exhibited trust behaviors highly aligned with human patterns, though some biases related to participant demographics were noted.
+The assumption that LLMs can emulate human behavior has been validated by multiple studies, including <d-cite key="Aher2022UsingLL"></d-cite>, which introduced a series of behavioral tests they dubbed "Turing Experiment" (not to be confused with the Turing Test). These tests, drawn from psycholinguistics, behavioral economics, and social psychology, were crafted to examine whether language models could replicate human responses in various behavioral experiments. Another study by <d-cite key="Xie2024CanLL"></d-cite> explored whether language models could mirror human trust behaviors by using games from behavioral economics to observe interactions with other language models and, subsequently, with human participants. Their findings generally showed that language models exhibited trust behaviors highly aligned with human patterns, though some biases related to participant demographics were noted.
 
 ### Simulating the Human Brain
 
@@ -192,18 +179,18 @@ But LLMs can model more than human behavior. Since language is a direct conduit 
 
 One striking example of using NLP to simulate aspects of the brain is presented in <d-cite key="Tuckute2024DrivingAS"></d-cite>, where researchers examine whether language models such as GPT-2 XL can not only predict but also influence neural activity in the human language network, a set of interconnected brain regions that support speaking, listening, reading, and understanding language.
 
-The researchers recruited participants who underwent fMRI scans while reading 1,000 diverse sentences, then trained an encoding model by feeding GPT-2 XL sentence embeddings into a ridge regression system to predict neural activity. The model achieved a correlation of r = 0.38, demonstrating a clear alignment between its predictions and actual brain activity. In a second stage, the authors searched through roughly 1.8 million sentences to identify those predicted to maximally drive or suppress neural responses. When these sentences were presented to new participants in a held-out fMRI test, the predictions held: “high-response” sentences reliably produced stronger activation in the language network, while “low-response” sentences produced weaker activation. In short, the study shows that NLP models can predict brain activity and even influence it.
+The researchers recruited participants who underwent fMRI scans while reading 1,000 diverse sentences, then trained an encoding model by feeding GPT-2 XL sentence embeddings into a ridge regression system to predict neural activity. The model achieved a correlation of r = 0.38, demonstrating a clear alignment between its predictions and actual brain activity. In a second stage, the authors searched through roughly 1.8 million sentences to identify those predicted to maximally drive or suppress neural responses. When these sentences were presented to new participants in a held-out fMRI test, the predictions held: "high-response" sentences reliably produced stronger activation in the language network, while "low-response" sentences produced weaker activation. In short, the study shows that NLP models can predict brain activity and even influence it.
 
 This line of research holds promise for the future, enabling simulations with NLP models instead of humans and overcoming traditional neuroscience limitations, such as invasive procedures, high costs, and limited access to specialized equipment.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/brain1.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/brain1.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/brain2.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/brain2.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -215,13 +202,13 @@ This indicates that less predictable sentences generally elicited stronger respo
 
 ### Extracting Applicable Insights from Corpora
 
-Finally, NLP can fulfill one of its original purposes: extracting insights from large corpora, in this case, scientific texts addressing human-centric sciences. For example, <d-cite key="Zhou2019AutomaticEA"></d-cite> used NLP to analyze hundreds of clinical notes from healthy individuals and Alzheimer’s patients, seeking to extract risk factors from a predefined, expert-curated list. They then examined their correlations with patients’ diagnoses.
+Finally, NLP can fulfill one of its original purposes: extracting insights from large corpora, in this case, scientific texts addressing human sciences. For example, <d-cite key="Zhou2019AutomaticEA"></d-cite> used NLP to analyze hundreds of clinical notes from healthy individuals and Alzheimer’s patients, seeking to extract risk factors from a predefined, expert-curated list. They then examined their correlations with patients’ diagnoses.
 
 Their analysis confirmed the prevalence of well-known risk factors, such as tobacco use and malnutrition, in over 50% of Alzheimer’s cases. However, it also called into question certain popular medical hypotheses. Despite extensive research linking cardiovascular risk factors, such as high-fat and high-calorie diets, to Alzheimer’s disease (1), <d-cite key="Zhou2019AutomaticEA"></d-cite> found these factors mentioned in only about 1% of the clinical records analyzed. Instead, they observed significant associations with nutrient deficiencies, documented in over 25% of cases.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/knowledge-extraction.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/knowledge-extraction.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -240,11 +227,11 @@ The role of NLP scientists in scientific collaborations goes beyond selecting a 
 
 It’s up to the NLP scientist to recognize that, in scientific settings, the goal is no longer to achieve the highest possible performance. Instead, the emphasis shifts toward gaining interpretable insights that help explain the underlying human phenomena, even if this comes at the cost of a few performance points. In practice, this involves examining the model’s parameters, behaviors, and predictions to understand which patterns it captures from the data and how those insights relate to the scientific questions at hand, i.e., turning predictive power into meaningful scientific knowledge through interpretability (and explainability). Importantly, interpretability in NLP serves a dual purpose: it can **improve model performance through interpretability** – revealing failure points and guiding refinement – and it can **extract scientific insights** that deepen our understanding of the phenomena being studied.
 
-Interpretability in NLP can take many forms, and <d-cite key="Calderon2024OnBO"></d-cite> offers a helpful way to make sense of this landscape. They define an interpretability (and explainability) method broadly as “any approach that extracts insights into how an NLP system works”, whether at the level of the entire model or a specific component. Some methods explain the full input–output behavior (for example, how changing the input shifts a prediction), while others zoom in on particular layers or modules, such as probing what the early layers of GPT-2 XL encode. The paper organizes these approaches into several interpretability paradigms, each designed to uncover different types of insights.
+Interpretability in NLP can take many forms, and <d-cite key="Calderon2024OnBO"></d-cite> offers a helpful way to make sense of this landscape. They define an interpretability (and explainability) method broadly as "any approach that extracts insights into how an NLP system works", whether at the level of the entire model or a specific component. Some methods explain the full input–output behavior (for example, how changing the input shifts a prediction), while others zoom in on particular layers or modules, such as probing what the early layers of GPT-2 XL encode. The paper organizes these approaches into several interpretability paradigms, each designed to uncover different types of insights.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/papers-count.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/papers-count.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -253,7 +240,7 @@ Interpretability in NLP can take many forms, and <d-cite key="Calderon2024OnBO">
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/paradigms.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/paradigms.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -261,7 +248,7 @@ Interpretability in NLP can take many forms, and <d-cite key="Calderon2024OnBO">
   Figure: Distribution of NLP interpretability paradigms across various research fields, illustrating how NLP research is applied in practice across multiple disciplines. 
 </div>
 
-In addition to interpretability, NLP scientists should prioritize techniques that help distinguish correlation from causation to ensure that their conclusions genuinely reflect a model’s decision-making process, referred to as **“faithful explanations”** <d-cite key="Jacovi2020TowardsFI"></d-cite>. Ensuring faithful explanations requires establishing causality in results <d-cite key="Gat2023FaithfulEO"></d-cite>, by incorporating techniques such as counterfactuals <d-cite key="Feder2020CausaLMCM"></d-cite>, interventions <d-cite key="Wu2023InterpretabilityAS"></d-cite>, adjustment <d-cite key="WoodDoughty2018ChallengesOU"></d-cite>, and matching <d-cite key="Zhang2023CausalMW"></d-cite>. Integrating causality and interpretability into NLP research is therefore essential for producing reliable, scientifically meaningful insights.
+In addition to interpretability, NLP scientists should prioritize techniques that help distinguish correlation from causation to ensure that their conclusions genuinely reflect a model’s decision-making process, referred to as **"faithful explanations"** <d-cite key="Jacovi2020TowardsFI"></d-cite>. Ensuring faithful explanations requires establishing causality in results <d-cite key="Gat2023FaithfulEO"></d-cite>, by incorporating techniques such as counterfactuals <d-cite key="Feder2020CausaLMCM"></d-cite>, interventions <d-cite key="Wu2023InterpretabilityAS"></d-cite>, adjustment <d-cite key="WoodDoughty2018ChallengesOU"></d-cite>, and matching <d-cite key="Zhang2023CausalMW"></d-cite>. Integrating causality and interpretability into NLP research is therefore essential for producing reliable, scientifically meaningful insights.
 
 ### Meeting Scientific Standards
 
@@ -275,7 +262,7 @@ Even popular LLM-based approaches, such as using LLMs as annotators, can now be 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/2025-04-28-nlp4science/llm-annotations.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/2026-04-27-nlp-for-human-sciences/llm-annotations.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -286,18 +273,18 @@ One example of statistically validating LLMs as annotators appears in <d-cite ke
 
 ### Interdisciplinary Collaboration
 
-Finally, for NLP to empower research, at least two experts are required: one on the NLP side and one on the scientific side. Without consulting with domain experts, the NLP Scientist can find themselves investing in efforts that, despite being interesting,  may not drive true impact. To illustrate this, let’s consider the task of NLP Dementia Detection (as approached by dozens of researchers <d-cite key="Jarrold2014AidedDO,Edwards2020MultiscaleSF,BT2024PerformanceAO"></d-cite> as examples). This task involves analyzing texts to differentiate between healthy individuals and those with dementia. In consultation with a domain expert,  namely, a highly respected professor who leads a research center on Alzheimer’s, we asked “how NLP might help advance research on dementia detection”. Her response was straightforward:
+Finally, for NLP to empower research, at least two experts are required: one on the NLP side and one on the scientific side. Without consulting with domain experts, the NLP Scientist can find themselves investing in efforts that, despite being interesting,  may not drive true impact. To illustrate this, let’s consider the task of NLP Dementia Detection (as approached by dozens of researchers <d-cite key="Jarrold2014AidedDO,Edwards2020MultiscaleSF,BT2024PerformanceAO"></d-cite> as examples). This task involves analyzing texts to differentiate between healthy individuals and those with dementia. In consultation with a domain expert,  namely, a highly respected professor who leads a research center on Alzheimer’s, we asked "how NLP might help advance research on dementia detection". Her response was straightforward:
 
 <blockquote>
 "If the data used for training is collected from individuals already diagnosed with noticeable dementia, it wouldn’t be particularly helpful or impactful. When someone has already been diagnosed, the signs are easily detectable, so a predictive model wouldn’t add much value. The real challenge lies in identifying subtle, early signals that go unnoticed –detecting the Mild Cognitive Impairment (MCI) phase. That’s where you should focus."
 </blockquote>
 
-No one but a domain expert could have provided this invaluable advice. This insight prompts reflection on the hundreds of existing studies on dementia detection <d-cite key="PeledCohen2024ASR"></d-cite>, which primarily rely on clinical datasets where the vast majority of participants are labeled as “Healthy” or “Dementia”, with very few “MCI” individuals <d-cite key="Becker1994TheNH"></d-cite>. While these works demonstrate impressive detection accuracy of up to 90%, achieved through a range of NLP approaches, are they clinically and scientifically relevant?
+No one but a domain expert could have provided this invaluable advice. This insight prompts reflection on the hundreds of existing studies on dementia detection <d-cite key="PeledCohen2024ASR"></d-cite>, which primarily rely on clinical datasets where the vast majority of participants are labeled as "Healthy" or "Dementia", with very few "MCI" individuals <d-cite key="Becker1994TheNH"></d-cite>. While these works demonstrate impressive detection accuracy of up to 90%, achieved through a range of NLP approaches, are they clinically and scientifically relevant?
 
 On the other side of the equation, we should consider what scientific domain experts can gain from collaborating closely with NLP scientists. As NLP (and LLMs in particular) become increasingly prevalent as research tools, NLP scientists have a vital responsibility to guide their counterparts on the strengths and limitations of their methods. An interesting example is provided by <d-cite key="Ophir2021TheHG"></d-cite>, who developed a guide for doctors on applying NLP in suicide risk treatment.
 
-NLP scientists should always remember the unique expertise they bring to the table- they’re the specialists who understand the strengths of NLP, designing technical solutions, running experiments, and interpreting results. However, in “NLP for science”, close collaboration with domain experts is essential for success. These scientific counterparts contribute invaluable insights, whether in shaping the initial problem definition, guiding data collection and annotation, or gauging the broader impact of results. By working together from the outset, NLP scientists and domain experts can ensure that the research is not only technically robust but also genuinely meaningful and impactful.
+NLP scientists should always remember the unique expertise they bring to the table- they’re the specialists who understand the strengths of NLP, designing technical solutions, running experiments, and interpreting results. However, in "NLP for science", close collaboration with domain experts is essential for success. These scientific counterparts contribute invaluable insights, whether in shaping the initial problem definition, guiding data collection and annotation, or gauging the broader impact of results. By working together from the outset, NLP scientists and domain experts can ensure that the research is not only technically robust but also genuinely meaningful and impactful.
 
 ## Summary
 
-With this blog post, we aim to inspire NLP experts to leverage their expertise and push the boundaries of human-centered sciences. We highlighted NLP’s unique capabilities across fields such as neuroscience, psychology, behavioral economics, and beyond, illustrating how it can generate hypotheses, validate theories, run simulations, and more. The time is ripe for NLP to drive scientific insights and go beyond mere prediction, positioning language as a lens into human cognition and collective behavior. Moving forward, interdisciplinary collaboration, scientific rigor, and a commitment to meaningful research will be essential to make NLP a cornerstone of human-centered scientific discovery.
+With this blog post, we aim to inspire NLP experts to leverage their expertise and push the boundaries of human sciences. We highlighted NLP’s unique capabilities across fields such as neuroscience, psychology, behavioral economics, and beyond, illustrating how it can generate hypotheses, validate theories, run simulations, and more. The time is ripe for NLP to drive scientific insights and go beyond mere prediction, positioning language as a lens into human cognition and collective behavior. Moving forward, interdisciplinary collaboration, scientific rigor, and a commitment to meaningful research will be essential to make NLP a cornerstone of human-centered scientific discovery.
